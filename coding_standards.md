@@ -101,9 +101,8 @@ Output: link_title_list.json
 
 
 
-
 ## Testing
-All features should have tests, and we seek a CI for managing the code that can utilize these tests.
+All features should have tests run in Travis.
 
 Test everything with unit tests before it can be pushed onto the master branch.
 
@@ -111,7 +110,3 @@ Suggestion: Aim for 80% code coverage. (Or a % that can be agreed upon in a meet
 - Ensure that you are using the most up-to-date libraries and packages when newly adding them to the project.
 - Do not use any deprecated functions.
 
-## Tasks
-Set up CI (Travis or [SonarQube](https://www.sonarqube.org/))?
-
-It might be difficult to manually enforce all of these but if we opt to use a CI tool ([SonarQube](https://www.sonarqube.org/), for example), we may be able to automate a lot of the review process and have a constant overview of the status of the codebase.
