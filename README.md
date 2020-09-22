@@ -1,1 +1,1 @@
-# MediaCat Documentation
+# MediaCat Developer Documentation
