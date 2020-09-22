@@ -1,1 +1,1 @@
-# MediaCat-docs
+# MediaCat Documentation
