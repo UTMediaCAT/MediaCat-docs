@@ -26,6 +26,10 @@ Project/
 
 Every new feature should be developed on a separate branch. Once complete, a pull request will be reviewed by one or two other developers. If all the requirements are satisfied, it can be merged with master. If the branch contains a significantly large feature, a code review meeting will take place to go through the code.
 
+Branches will be named by the feature that is being implemented. They will start off with the ticket number and there will be no spaces but instead the words will be separated by hyphens, '-'. (i.e. #5-new-feature)
+
+Commit messages should be clear about what exactly was added. A description after the commit subject can be added if extra descriptions on technical details are needed.
+
 When the code is ready for a release, a branch is created and tagged with the release # and head continues for new feature development
 
 ## Coding Standards
@@ -60,6 +64,7 @@ Output: link_title_list.json
 - Before programming what data is returned through a JSON or CSV, create a schema and share it with the other developers so they may weigh in with whether they may need any specific data.
 - Single return statement.
 - Make commit messages descriptive of what changes you made.
+- The .gitignore file will contain the node_modules folder for Javascript repositories.
 
 ### Python:
 - Naming Conventions: From [PEP-8](https://realpython.com/python-pep8/#naming-styles)
