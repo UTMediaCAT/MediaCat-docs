@@ -23,7 +23,12 @@ Unlike the python library date guesser, it gives a date even on the home page.
 */
 
 
-import {articleParserfunction, metascraperfunction} from './JavascriptDate';
+// import {articleParserfunction, metascraperfunction} from './JavascriptDate';
+
+const JavascriptDate = require('./JavascriptDate')
+const articleParserfunction = JavascriptDate.articleParserfunction
+const metascraperfunction = JavascriptDate.metascraperfunction
+
 
 // const targetUrl =
 // 'https://www.aljazeera.com/economy/2020/10/7/trump-urges-congress-to-pass' +
@@ -59,11 +64,26 @@ const urlsJavascriptMetascrapperTest = [
   'https://www.cbc.ca/radio/thecurrent/the-current-for-oct-1-2020-1.5745953' +
   '/made-in-america-how-trump-and-biden-s-rival-visions-for-economic-recovery' +
   '-are-resonating-with-illinois-voters-1.5746657',
+  'https://jewishchronicle.timesofisrael.com/lawfare-joins-point-park-profs-legal-team-in-discrimination-suit/',
+  'https://www.haaretz.com/us-news/.premium-anti-zionist-hasidic-jews-shake-the-room-at-barclays-center-1.5483293',
+  'https://www.jpost.com/israel-news/tel-aviv-ranked-among-top-5-most-artistic-cities-in-the-world-to-visit-644129',
+  'https://www.themarker.com/coronavirus/.premium-1.9200329?utm_source=dlvr.it&utm_medium=twitter&utm_campaign=haaretz',
+  'https://www.themarker.com/hblocked?returnTo=https%3A%2F%2Fwww.themarker.com%2Fopinion%2F1.9198144%3Futm_source%3Ddlvr.it%26utm_medium%3Dtwitter%26utm_campaign%3Dhaaretz',
+  'https://www.ynetnews.com/articles/0,7340,L-4934332,00.html',
+  'http://www.israelnationalnews.com/News/News.aspx/236464',
+  'https://nocamels.com/2020/01/drip-irrigation-digital-farming-netafim-innovative-agriculture-tech/',
+  'https://nocamels.com/2016/05/israeli-black-hole-stephen-hawking-nobel-prize/',
+  'https://nocamels.com/2019/01/watergen-genny-water-air/',
+  'https://www.israelnationalnews.com/News/News.aspx/288156',
 ];
 
 const datesJavascriptMetascrapperTest =
   [null, null, new Date(2020, 9, 7),
-    null, new Date(2020, 9, 3), null, new Date(2020, 9, 2)];
+    null, new Date(2020, 9, 3), null, new Date(2020, 9, 2),
+    new Date(2020, 8, 25), new Date(2017, 7, 12), new Date(2020, 9, 1),
+    new Date(2020, 0, 10), null, new Date(2017, 2, 12),
+    new Date(2017, 9, 9), new Date(2020, 0, 19), new Date(2020, 4, 1),
+    new Date(2019, 0, 28), new Date(2020, 8, 30)];
 
 
 const javascriptDateTestFunc = function(url, date) {
@@ -200,7 +220,7 @@ const javascriptMetascrapperTest = function() {
           } else {
             date1 = new Date(date1);
 
-            if (date1.setHours(0, 0, 0, 0) == date2.setHours(0,0,0,0)) {
+            if (date1.setHours(0, 0, 0, 0) == date2.setHours(0, 0, 0, 0)) {
               console.log('MATCHED! ' + urlsJavascriptMetascrapperTest[i]);
               console.log('returned: ' + date1);
               console.log('expected: ' + date2 + '\n');
@@ -222,7 +242,7 @@ const javascriptMetascrapperTest = function() {
 
 
 // Automative Testing
-javascriptDateTest();
+// javascriptDateTest();
 javascriptMetascrapperTest();
 
 // Manual Testing
