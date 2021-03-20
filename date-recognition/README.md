@@ -21,7 +21,7 @@ The function `javascriptMetascrapperTest()` tests the dates the Metascraper retu
 ### constants
 `urlsJavascriptDateTest` the urls that the `javascriptDateTest();` will test
 
-`datesJavascriptDateTest` the hard coded dates that `javascriptDateTest();' will use to compare it's results to
+`datesJavascriptDateTest` the hard coded dates that `javascriptDateTest();` will use to compare it's results to
 
 `urlsJavascriptMetascrapperTest` the urls that the `javascriptMetascrapperTest();` will test
 
@@ -30,7 +30,8 @@ The function `javascriptMetascrapperTest()` tests the dates the Metascraper retu
 # PythonDateTest.js
 
 Similar to the javascript tests, python libraries were also tested. Compares articleDateExtractor with dateGuessor.
-simply `python3 PythonDateTest.py`
+
+simply run `python3 PythonDateTest.py`
 
 ## params
 
