@@ -29,7 +29,7 @@ The function `javascriptMetascrapperTest()` tests the dates the Metascraper retu
 
 # PythonDateTest.js
 
-Similar to the javascript tests, python libraries were also tested.
+Similar to the javascript tests, python libraries were also tested. Compares articleDateExtractor with dateGuessor.
 simply `python3 PythonDateTest.py`
 
 ## params
